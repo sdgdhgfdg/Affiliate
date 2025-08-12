@@ -1,0 +1,26 @@
+affiliate-hugo-site/
+├─ .github/
+│  └─ workflows/
+│     ├─ generate.yml
+│     └─ deploy.yml
+├─ archetypes/
+│  └─ default.md
+├─ content/
+│  └─ drafts/                # generator writes here
+├─ layouts/
+│  ├─ _default/
+│  │  └─ single.html
+│  └─ partials/
+│     └─ header.html
+├─ static/
+│  └─ assets/
+├─ products.csv              # sample input for generator
+├─ scripts/
+│  └─ generate_posts.py
+│  └─ utils_git.py
+├─ integrations/
+│  ├─ mailgun_send.py
+│  └─ buffer_post.py
+├─ config.toml
+├─ README.md
+└─ .gitignore
