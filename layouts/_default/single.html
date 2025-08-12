@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "header.html" . }}
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>{{ .Title }}</h1>
+        <p><em>Published: {{ .Date.Format "Jan 2, 2006" }}</em></p>
+        {{ if .Params.product_image }}
+          <img src="{{ .Params.product_image }}" alt="{{ .Title }}" style="max-width:400px;">
+        {{ end }}
+        {{ .Content }}
+        <hr>
+        <p><strong>Price:</strong> {{ .Params.price }}</p>
+        {{ if .Params.affiliate_link }}
+          <p><a href="{{ .Params.affiliate_link }}" rel="nofollow sponsored" target="_blank">Buy on affiliate store</a></p>
+        {{ end }}
+        <p><small>{{ .Site.Params.affiliate_disclosure }}</small></p>
+      </article>
+    </main>
+  </body>
+</html>
