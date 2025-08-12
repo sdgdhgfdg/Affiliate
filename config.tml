@@ -1,0 +1,13 @@
+baseURL = "https://sdgdhgfdg.github.io/Affiliate"
+languageCode = "en-us"
+title = "Lur"
+theme = "simple"
+paginate = 10
+enableRobotsTXT = true
+
+[params]
+  description = "Honest reviews and best-of lists for Lur"
+  affiliate_disclosure = "As an Amazon Associate I earn from qualifying purchases."
+
+[permalinks]
+  post = "/:year/:month/:slug/"
